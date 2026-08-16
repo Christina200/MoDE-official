@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "peft"
+version = "0.13.2"
+description = "PEFT 0.13.2 extended with the modality-decoupled MoE-LoRA tuner (MMoELora) used by MoDE."
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+dependencies = [
+    "numpy>=1.17",
+    "packaging>=20.0",
+    "psutil",
+    "pyyaml",
+    "torch>=1.13.0",
+    "transformers",
+    "tqdm",
+    "accelerate>=0.21.0",
+    "safetensors",
+    "huggingface_hub>=0.17.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+peft = ["py.typed"]

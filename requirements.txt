@@ -1,0 +1,15 @@
+# transformers and peft are installed from third_party/ (see README) -- do not
+# install them from PyPI, the MoDE experts live in those forks.
+torch==2.1.1
+torchvision==0.16.1
+deepspeed==0.15.2
+accelerate==1.0.1
+safetensors==0.5.2
+huggingface-hub==0.30.2
+numpy==1.26.4
+Pillow==10.0.1
+jsonlines==4.0.0
+tqdm==4.67.1
+protobuf==5.29.3
+open_clip_torch==2.30.0
+wandb==0.19.4
